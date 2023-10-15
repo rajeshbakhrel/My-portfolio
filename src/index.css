@@ -35,9 +35,70 @@
   );
 }
 
+
+
+/* mycostum */
+
+/* @media (min-width:960px) { */
+
+/* .external-css-one{
+  display: none;
+  height: 10vh;
+} */
+
+/* } */
+
+ /* .external-css-two{
+    height: 640px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+  } */
+
+@media (max-width:960px) {
+
+  .custom-background {
+    background-size: auto 120%;
+  
+  }
+  
+}
+
+.custom-background {
+  background-image: url('./assets/again.png') ;
+  /* background-size: cover; */
+  background-size: auto 100%;
+  background-position: center;
+  height: 640px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: auto;
+}
+
+.custom-services {
+ 
+  background-image: url('./assets/test.png');
+  background-size: cover;
+  background-position: center;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+height: 100%;
+width: 100%;
+  mix-blend-mode: lighten;
+
+}
+
+
 .icon-color{
   color: #b908c3 ;
 }
+
+
+
+
+/* ==== */
 
 .active {
   color: #fff;
@@ -71,6 +132,6 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply py-8 lg:py-20 lg:h-screen flex items-center;
   }
 }
