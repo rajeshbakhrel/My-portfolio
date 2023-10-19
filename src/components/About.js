@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import img5 from "../assets/again.png"
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
@@ -86,8 +87,8 @@ const About = () => {
         
       </div>
       <div className='flex gap-x-8 items-center'>
-          <button className='btn btn-lg'>Contact me</button>
-          <a href='#'className='text-gradient btn-link'>My Portfolio</a>
+          <Link smooth={true} to='contact'className='cursor-pointer' ><button className='btn btn-lg'>Contact me</button></Link>
+          <Link smooth={true} to='home'className='cursor-pointer text-gradient btn-link'>My Portfolio</Link>
         </div>
     </motion.div>
   </div>

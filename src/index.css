@@ -39,22 +39,7 @@
 
 /* mycostum */
 
-/* @media (min-width:960px) { */
 
-/* .external-css-one{
-  display: none;
-  height: 10vh;
-} */
-
-/* } */
-
- /* .external-css-two{
-    height: 640px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: auto;
-  } */
 
 @media (max-width:960px) {
 
@@ -81,6 +66,9 @@
  
   background-image: url('./assets/test.png');
   background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   background-position: center;
   /* background-size: contain; */
   background-repeat: no-repeat;

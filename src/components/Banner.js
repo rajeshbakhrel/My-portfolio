@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../assets/avatar.svg'
-
+import { Link } from 'react-scroll';
 import { TypeAnimation } from 'react-type-animation';
 import {ImGithub} from "react-icons/im"
 import {FaFacebook} from "react-icons/fa"
@@ -56,10 +56,10 @@ const Banner = () => {
        whileInView={'show'}
        viewport={{once:false, amount:0.7}}
         className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-        <button className='btn btn-lg'>Contact me</button>
-        <a href='#' className='text-gradient btn-link '>
+        <Link smooth={true}  to='contact'  className='cursor-pointer'><button className='btn btn-lg'>Contact me</button></Link>
+        <Link smooth={true}  to='home' className='cursor-pointer text-gradient btn-link '>
           my portfolio
-        </a>
+        </Link>
        </motion.div>
        <motion.div 
        variants={fadeIn('up', 0.7)}
