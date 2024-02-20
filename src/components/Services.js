@@ -6,25 +6,26 @@ import { fadeIn } from '../variants';
 const services = [
   {
     name:'UI/UX Design',
-    description:'  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum cumque quaerat quae obcaecati ',
+    description:'Possess a great deal of expertise and knowledge in HTML, CSS, and Figma. as well as a sketch artist.  ',
     link: 'Learn more',
    
   },
   {
-    name:'Developement',
-    description:'  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum cumque quaerat ',
+    name:'Web Developement',
+    description:'Possess knowledge of JavaScript programming language. accomplished numerous projects with React Js. possess extensive expertise using APIs',
     link: 'Learn more',
    
   },
   {
-    name:'Digital Marketing',
-    description:'  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum cumque quaerat ',
+    name:'Git',
+    description:'A solid understanding of git. can cooperate with others. possess prior experience working in a branch.',
     link: 'Learn more',
    
   },
+ 
   {
-    name:'Product Branding ',
-    description:'  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum cumque quaerat ',
+    name:'Other skills',
+    description:'Own two hackathon experiences, strong leadership, amicable, and cooperative',
     link: 'Learn more',
    
   },
@@ -32,6 +33,9 @@ const services = [
 
 
 const Services = () => {
+  const openGitInNewTab = () => {
+    window.open('https://github.com/rajeshbakhrel', '_blank');
+  };
   return <section className='section' id='services'>
     <div className="container mx-auto">
       <div className='flex flex-col lg:flex-row'>
@@ -42,15 +46,16 @@ const Services = () => {
              whileInView={'show'}
              viewport={{once: false, amount:0.3}} 
         className='flex-1
-        lg:bg-services 
+        lg:bg-services bg-contain
+        
          
          lg:bg-bottom 
          bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
           <h2 className='h2 text-accent mb-6'>What I Do.</h2>
           <h3 className='h3 max-w-[455px] mb-16'>
-            I'm a Freelancice Front-end Developer with over 2 years of experience.
+          I'am a Frontend developer specializing in creating attractive and functional user interfaces,
           </h3>
-          <button className='btn btn-sm'> See my work</button>
+          <button className='btn btn-sm' onClick={openGitInNewTab}> See my work</button>
         </motion.div>
         {/* {services} */}
         <motion.div

@@ -28,7 +28,7 @@ const About = () => {
        external-css-two
      custom-background 
     bg-contain bg-no-repeat 
-    h-[640px] 
+    h-[740px] 
     
     mix-blend-lighten bg-top">
 
@@ -43,19 +43,17 @@ const About = () => {
      viewport={{once: false, amount:0.3}}
     className='flex-1'>
       <h2 className='h2 text-accent'>About me. </h2>
-      <h3 className='h3 mb-4'>I'm a freelancer Front-end Developer 
-        with over 2 years of experience
+      <h3 className='h3 mb-4'>I'm a Front-end Developer 
+        with over 4 years of experience
       </h3>
       <p className='mb-6 '>
-        Lorem ipsum dolor sit amet, consectetur adipisicing 
-        elit. Inventore itaque explicabo consequatur qui voluptatibus
-         repellat quam praesentium soluta perspiciatis aut?
+      A frontend developer who specializes in creating the visual elements and user interface of websites and web applications.Collaborate with UI/UX designers and backend developers to bring web projects to life.familiarity using the React Js and high experience of working with API.
       </p>
       <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
 
       <div>
           <div className='text-[40px] font-tertiary text-gradient mb-2'>
-            {inView ? <CountUp start={0} end={13} duration={3}/> : null}
+            {inView ? <CountUp start={0} end={4} duration={3}/> : null}
           </div>
           <div className='font-primary text-sm tracking=[2px]'>
             Years of <br/>
@@ -65,8 +63,8 @@ const About = () => {
 
         <div>
           <div className='text-[40px] font-tertiary text-gradient mb-2'>
-            {inView ? <CountUp start={0} end={15} duration={3}/> : null}
-            k+
+            {inView ? <CountUp start={0} end={11} duration={3}/> : null}
+            {/* k+ */}
           </div>
           <div className='font-primary text-sm tracking=[2px]'>
             Project <br/>
@@ -77,7 +75,7 @@ const About = () => {
         <div>
           <div className='text-[40px] font-tertiary text-gradient mb-2'>
             {inView ? <CountUp start={0} end={11} duration={3}/> : null}
-            k+
+            {/* k+ */}
           </div>
           <div className='font-primary text-sm tracking=[2px]'>
            Satisfied <br/>

@@ -14,6 +14,27 @@
 }
 
 
+.image-container-full{
+  background-color: #c20acd;
+  border-radius: 50%;
+  overflow: hidden;
+
+
+}
+
+.image-container{
+ 
+  filter: brightness(80%);
+  height: 76vh;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15vh;
+  /* margin-bottom: 40vh; */
+  /* margin: 10vh 20vh; */
+
+}
+
 .btn:hover {
   background: linear-gradient(
     92.23deg,
@@ -39,16 +60,24 @@
 
 /* mycostum */
 
-
+ 
 
 @media (max-width:960px) {
 
   .custom-background {
-    background-size: auto 120%;
+    background-image: url('./assets/hello.png') ;
+    filter: brightness(80%);
+    background-size: auto 130%;
   
+  }
+
+  .services{
+    background-image: none;
   }
   
 }
+
+@media (min-width:960px) {
 
 .custom-background {
   background-image: url('./assets/again.png') ;
@@ -62,9 +91,11 @@
   width: auto;
 }
 
+}
+
 .custom-services {
  
-  background-image: url('./assets/test.png');
+  /* background-image: url('./assets/test.png'); */
   background-size: cover;
   align-items: center;
   display: flex;
@@ -72,8 +103,8 @@
   background-position: center;
   /* background-size: contain; */
   background-repeat: no-repeat;
-height: 100%;
-width: 100%;
+  height: 100%;
+  width: 100%;
   mix-blend-mode: lighten;
 
 }
@@ -83,6 +114,11 @@ width: 100%;
   color: #b908c3 ;
 }
 
+/* .services{
+  background-image: url(assets/services.png);
+  
+  background-size: contain;
+} */
 
 
 

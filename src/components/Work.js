@@ -2,13 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
-import Img1 from "../assets/portfolio-img1.png"
-import Img2 from "../assets/portfolio-img2.png"
-import Img3 from "../assets/portfolio-img3.png"
+import Img1 from "../assets/projectone.png"
+import Img2 from "../assets/projecttwo.png"
+import Img3 from "../assets/projectthree.png"
 
 
 
 const Work = () => {
+  
+  const openGitInNewTab = () => {
+    window.open('https://github.com/rajeshbakhrel', '_blank');
+  };
   return <div className='section'id='work'>
     <div className="container mx-auto">
       <div className='flex flex-col lg:flex-row gap-x-10'>
@@ -25,12 +29,9 @@ const Work = () => {
               My Latest <br/>
               Work.
             </h2>
-            <p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet consectetur
-               adipisicing elit. In, repudiandae quam 
-               harum quidem iure
-               placeat pariatur iusto omnis? Hic, in?
+            <p className='max-w-sm mb-16'>This is some of my most recent work. Click the View all projects button to view additional GitHub projects.
                </p>
-               <button className='btn btn-sm'>View all projects</button>
+               <button className='btn btn-sm' onClick={openGitInNewTab}>View all projects</button>
           </div>
 
 
@@ -47,11 +48,11 @@ const Work = () => {
          <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt='sorry'/>
          {/* pretitle */}
          <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-          <span className='text-gradient'>UI/UX Designer</span>
+          <span className='text-gradient'>Web Developement</span>
           </div>
          {/* title  */}
          <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-          <span className='text-3xl text-white'>Project Title</span>
+          <span className='text-3xl text-white'>E-Commerce site</span>
          </div>
         </div>
         </motion.div>
@@ -75,11 +76,11 @@ const Work = () => {
          <img className='group-hover:scale-125 transition-all duration-500' src={Img2} alt='sorry'/>
          {/* pretitle */}
          <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-          <span className='text-gradient'>UI/UX Designer</span>
+          <span className='text-gradient'>Web Developement</span>
           </div>
          {/* title  */}
          <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-          <span className='text-3xl text-white'>Project Title</span>
+          <span className='text-3xl text-white'>Rental System</span>
          </div>
         </div>
 
@@ -99,7 +100,7 @@ const Work = () => {
           </div>
          {/* title  */}
          <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-          <span className='text-3xl text-white'>Project Title</span>
+          <span className='text-3xl text-white'>Futsal Booking</span>
          </div>
         </div>
 
