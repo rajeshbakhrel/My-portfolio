@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { FaPhone } from "react-icons/fa6";
+import { IoMdMailUnread } from "react-icons/io";
 
 const Contact = () => {
   return <div className='py-16 lg:section mb-14'id='contact'>
@@ -22,6 +24,8 @@ const Contact = () => {
           <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
             Let's work <br/> together
           </h2>
+          <p className='flex'><div ><IoMdMailUnread className='text-[29px] mr-5'/></div> <div div className='text-xl  text-accent font-medium mb-2 tracking-wide'>   rajeshbakhrel123@gmail.com</div></p>
+          <p className='flex center'><div><FaPhone className='text-[27px] mr-5'/></div><div className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>+977 9865003266</div></p>
         </div>
       </motion.div>
 
