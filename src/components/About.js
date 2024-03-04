@@ -44,7 +44,7 @@ const About = () => {
     className='flex-1'>
       <h2 className='h2 text-accent'>About me. </h2>
       <h3 className='h3 mb-4'>I'm a Front-end Developer 
-        with over 4 years of experience
+        with over 2 years of experience
       </h3>
       <p className='mb-6 '>
       A frontend developer who specializes in creating the visual elements and user interface of websites and web applications.Collaborate with UI/UX designers and backend developers to bring web projects to life.familiarity using the React Js and high experience of working with API.
@@ -53,7 +53,7 @@ const About = () => {
 
       <div>
           <div className='text-[40px] font-tertiary text-gradient mb-2'>
-            {inView ? <CountUp start={0} end={4} duration={3}/> : null}
+            {inView ? <CountUp start={0} end={2} duration={4}/> : null}
           </div>
           <div className='font-primary text-sm tracking=[2px]'>
             Years of <br/>
@@ -63,7 +63,7 @@ const About = () => {
 
         <div>
           <div className='text-[40px] font-tertiary text-gradient mb-2'>
-            {inView ? <CountUp start={0} end={11} duration={3}/> : null}
+            {inView ? <CountUp start={0} end={6} duration={4}/> : null}
             {/* k+ */}
           </div>
           <div className='font-primary text-sm tracking=[2px]'>
@@ -74,7 +74,7 @@ const About = () => {
         
         <div>
           <div className='text-[40px] font-tertiary text-gradient mb-2'>
-            {inView ? <CountUp start={0} end={11} duration={3}/> : null}
+            {inView ? <CountUp start={0} end={6} duration={3.5}/> : null}
             {/* k+ */}
           </div>
           <div className='font-primary text-sm tracking=[2px]'>
